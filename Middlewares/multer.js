@@ -6,7 +6,7 @@ const app = express();
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, path.join(__dirname,"../../client/public/Images"))
+      cb(null, path.join(__dirname,"../../../userClient/crud-redux-client/public/Images"))
     },
     filename: function (req, file, cb) {
      
